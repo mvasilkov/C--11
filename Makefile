@@ -5,5 +5,8 @@ ifeq ($(uname), Darwin)
 compiler += -stdlib=libc++
 endif
 
+ucs2:
+	$(compiler) ucs2.c++
+
 hello:
 	$(compiler) hello.c++
